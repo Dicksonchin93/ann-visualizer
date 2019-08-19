@@ -4,7 +4,7 @@ python:
   - "3.6"
 install:
   - pip install -r requirements.txt
-  - pip install pytest-cov pytest-xdist
+  - pip install coveralls pytest-xdist pytest-cov
 script:
   - py.test --cov-report= --cov=keras_architecture_visualizer --boxed tests/ -vvvvs
 addons:

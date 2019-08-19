@@ -1,13 +1,13 @@
 language: python
 python:
+  - "2.7"
   - "3.6"
 install:
-  - pip3 install tensorflow
-  - pip3 install keras
-  - pip3 install ann_visualizer
-  - pip3 install graphviz
+  - pip install -r requirements.txt
+  - pip install coveralls pytest-xdist pytest-cov
+  - pip install .
 script:
-  - python3.6 tests/test_ann.py
+  - py.test --cov-report= --cov=keras_architecture_visualizer --boxed tests/ -vvvvs
 addons:
   apt:
     packages:

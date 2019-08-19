@@ -1,42 +1,33 @@
-![photo](https://i.imgur.com/DrZJOzy.png)
-![photo](https://i.imgur.com/EHIoNoR.png)
-
-# ANN Visualizer
+# Keras Architecture Visualizer
 [![PyPI version](https://badge.fury.io/py/ann_visualizer.svg)](https://badge.fury.io/py/ann_visualizer) [![Build Status](https://travis-ci.org/Prodicode/ann-visualizer.svg?branch=master)](https://travis-ci.org/Prodicode/ann-visualizer) [![Donate](https://liberapay.com/assets/widgets/donate.svg)](https://liberapay.com/Prodicode/donate)
 
 A great visualization python library used to work with Keras. It uses python's graphviz library to create a presentable graph of the neural network you are building.
 
-## Version 2.0 is Out!
-
-Version 2.0 of the ann_visualizer is now released! The community demanded a CNN visualizer, so we updated our module. You can check out an example of a CNN visualization below!
-
-Happy visualizing!
-
 ## Installation
 ### From Github
-1. Download the `ann_visualizer` folder from the github repository.
-2. Place the `ann_visualizer` folder in the same directory as your main python script.
+1. Download the `keras_architecture_visualizer` folder from the github repository.
+2. Place the `keras_architecture_visualizer` folder in the same directory as your main python script.
 
 ### From pip
 Use the following command:
 
 ```bash
-pip3 install ann_visualizer
+pip install keras_architecture_visualizer
 ```
 
 Make sure you have graphviz installed. Install it using:
 
 ```bash
-sudo apt-get install graphviz && pip3 install graphviz
+sudo apt-get install graphviz && pip install graphviz
 ```
 
 ## Usage
 
 ```python
 
-from ann_visualizer.visualize import ann_viz;
+from keras_architecture_visualizer.visualize import ann_viz;
 #Build your model here
-ann_viz(model)
+keras_architecture_viz(model)
 ```
 
 ## Documentation
@@ -70,9 +61,9 @@ network.add(Dense(units=1,
                   activation='sigmoid',
                   kernel_initializer='uniform'));
 
-from ann_visualizer.visualize import ann_viz;
+from keras_architecture_visualizer.visualize import ann_viz;
 
-ann_viz(network, title="");
+keras_architecture_viz(network, title="");
 ```
 
 This will output:
@@ -83,7 +74,7 @@ This will output:
 import keras;
 from keras.models import Sequential;
 from keras.layers import Dense;
-from ann_visualizer.visualize import ann_viz
+from keras_architecture_visualizer.visualize import ann_viz
 model = build_cnn_model()
 ann_viz(model, title="")
 

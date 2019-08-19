@@ -9,6 +9,10 @@ def read_requirements(fname):
         requirements = requirements_file.read().split("\n")
         return [x for x in requirements if x.strip() != ""]
 
+# get __version__ from keras_architecture_visualizer version file
+exec(open(os.path.join("keras_architecture_visualizer", "version.py")))
+
+
 requirements = read_requirements("requirements.txt")
 test_requirements = requirements
 

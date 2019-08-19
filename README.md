@@ -32,13 +32,13 @@ keras_architecture_viz(model)
 
 ## Documentation
 
-### ann_viz(model, view=True, filename="network.gv", title="MyNeural Network")
+### keras_architecture_viz(model, view=True, filename="network.gv", title="MyNeural Network")
 * `model` - The Keras Sequential model
 * `view` - If True, it opens the graph preview after executed
 * `filename` - Where to save the graph. (.gv file format)
 * `title` - A title for the graph
 
-## Example ANN
+## Example keras_architecture_viz
 ```python
 import keras;
 from keras.models import Sequential;
@@ -127,5 +127,3 @@ def build_cnn_model():
 This will output:
 ![photo](https://i.imgur.com/v3QpACl.png)
 
-## Contributions
-This library is still unstable. Please report all bug to the issues section. It is currently tested with `python3.5` and `python3.6`, but it should run just fine on any python3.

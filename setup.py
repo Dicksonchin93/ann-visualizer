@@ -11,7 +11,8 @@ def read_requirements(fname):
         return [x for x in requirements if x.strip() != ""]
 
 # get __version__ from keras_architecture_visualizer version file
-exec(open(os.path.join("keras_architecture_visualizer", "version.py")))
+main_ns = {}
+exec(open(os.path.join("keras_architecture_visualizer", "version.py")).read(), main_ns)
 
 
 requirements = read_requirements("requirements.txt")
@@ -23,7 +24,7 @@ setup_requirements = ["pytest-runner"]
 setup(
     name='keras_architecture_visualizer',
     packages=['keras_architecture_visualizer'],
-    version=__version__,
+    version=main_ns['__version__'],
     license="MIT",
     description='A Python Library for visualizing Keras Neural Networks Models',
     long_description=readme,

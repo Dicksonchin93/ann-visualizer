@@ -1,14 +1,14 @@
 Metadata-Version: 1.1
-Name: ann-visualizer
+Name: keras-architecture-visualizer
 Version: 2.5
 Summary: A python library for visualizing Neural Networks
-Home-page: https://github.com/Prodicode/ann-visualizer
-Author: Tudor Gheorghiu
-Author-email: tudor.posta@live.com
+Home-page: https://github.com/Dicksonchin93/keras-architecture-visualizer
+Author: Chin Ee Kin forked from Tudor Gheorghiu
+Author-email: dickson_chin93@hotmail.com
 License: MIT
 Description-Content-Type: text/markdown
 Description: 
-            ANN Visualizer is a great visualization python library used to work with Keras. It uses python's graphviz library to create a presentable graph of the neural network you are building.
+            Keras Architecture Visualizer is a great visualization python library used to work with Keras. It uses python's graphviz library to create a presentable graph of the neural network you are building.
         
             Usage:
         
@@ -21,9 +21,9 @@ Description:
         
         Documentation:
         
-        ann_viz(model, view=True, filename="network.gv")
+        keras_architecture_vis(model, view=True, filename="network.gv")
         
-         model - The Keras Sequential model
+         model - The Keras Sequential/Functional model
          view - If True, it opens the graph preview after executed
          filename - Where to save the graph. (.gv file format)
         

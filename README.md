@@ -34,7 +34,7 @@ sudo apt-get install graphviz && pip3 install graphviz
 
 ```python
 
-from ann_visualizer.visualize import ann_viz;
+from keras_architecture_visualizer.visualize import ann_viz;
 #Build your model here
 ann_viz(model)
 ```
@@ -70,7 +70,7 @@ network.add(Dense(units=1,
                   activation='sigmoid',
                   kernel_initializer='uniform'));
 
-from ann_visualizer.visualize import ann_viz;
+from keras_architecture_visualizer.visualize import ann_viz;
 
 ann_viz(network, title="");
 ```
@@ -83,7 +83,7 @@ This will output:
 import keras;
 from keras.models import Sequential;
 from keras.layers import Dense;
-from ann_visualizer.visualize import ann_viz
+from keras_architecture_visualizer.visualize import ann_viz
 model = build_cnn_model()
 ann_viz(model, title="")
 

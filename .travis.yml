@@ -4,10 +4,10 @@ python:
 install:
   - pip3 install tensorflow
   - pip3 install keras
-  - pip3 install ann_visualizer
+  - pip3 install keras_architecture_visualizer
   - pip3 install graphviz
 script:
-  - python3.6 tests/test_ann.py
+  - python3.6 tests/test_keras_architecture_visualizer.py
 addons:
   apt:
     packages:

@@ -3,7 +3,7 @@ import unittest
 import keras
 from keras.layers import Input, Dense
 from keras.models import Model
-from ann_visualizer.visualize import ann_viz
+from keras_architecture_visualizer.visualize import ann_viz
 
 class MyTestCase(unittest.TestCase):
     def test_ann(self):

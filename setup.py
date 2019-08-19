@@ -6,7 +6,7 @@ long_description = """
     Usage:
 
 
-from ann_visualizer.visualize import ann_viz;
+from keras_architecture_visualizer.visualize import ann_viz;
 #Build your model here
 ann_viz(model)
 
@@ -23,8 +23,8 @@ ann_viz(model, view=True, filename="network.gv")
 
 
 setup(
-  name = 'ann_visualizer',
-  packages = ['ann_visualizer'],
+  name = 'keras_architecture_visualizer',
+  packages = ['keras_architecture_visualizer'],
   version = '2.5',
   license="MIT",
   description = 'A python library for visualizing Neural Networks',

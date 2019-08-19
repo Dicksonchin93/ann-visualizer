@@ -1,4 +1,5 @@
 from setuptools import setup
+import os
 
 with open("README.md") as readme_file:
     readme = readme_file.read()

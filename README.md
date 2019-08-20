@@ -24,9 +24,10 @@ sudo apt-get install graphviz && pip install graphviz
 
 ```python
 
-from keras_architecture_visualizer.visualize import ann_viz;
+from keras_architecture_visualizer import KerasArchitectureVisualizer
 #Build your model here
-keras_architecture_viz(model)
+vis = KerasArchitectureVisualizer()
+vis.visualize(model)
 ```
 
 ## Documentation
@@ -39,30 +40,30 @@ keras_architecture_viz(model)
 
 ## Example keras_architecture_viz
 ```python
-import keras;
-from keras.models import Sequential;
-from keras.layers import Dense;
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+from keras_architecture_visualizer import KerasArchitectureVisualizer
 
-network = Sequential();
+network = Sequential()
         #Hidden Layer#1
 network.add(Dense(units=6,
                   activation='relu',
                   kernel_initializer='uniform',
-                  input_dim=11));
+                  input_dim=11))
 
         #Hidden Layer#2
 network.add(Dense(units=6,
                   activation='relu',
-                  kernel_initializer='uniform'));
+                  kernel_initializer='uniform'))
 
         #Exit Layer
 network.add(Dense(units=1,
                   activation='sigmoid',
-                  kernel_initializer='uniform'));
+                  kernel_initializer='uniform'))
 
-from keras_architecture_visualizer.visualize import ann_viz;
-
-keras_architecture_viz(network, title="");
+vis = KerasArchitectureVisualizer()
+vis.visualize(model, title="")
 ```
 
 This will output:
@@ -70,12 +71,13 @@ This will output:
 
 ## Example CNN
 ```python
-import keras;
-from keras.models import Sequential;
-from keras.layers import Dense;
-from keras_architecture_visualizer.visualize import ann_viz
+import keras
+from keras.models import Sequential
+from keras.layers import Dense
+from keras_architecture_visualizer import KerasArchitectureVisualizer
 model = build_cnn_model()
-ann_viz(model, title="")
+vis = KerasArchitectureVisualizer()
+vis.visualize(model, title="")
 
 def build_cnn_model():
   model = keras.models.Sequential()

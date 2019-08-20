@@ -1,2 +1,2 @@
 from keras_architecture_visualizer.version import __version__
-from keras_architecture_visualizer.visualize import keras_architecture_vis
+from keras_architecture_visualizer.visualize import KerasArchitectureVisualizer

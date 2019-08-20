@@ -6,6 +6,8 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls pytest-xdist pytest-cov
   - pip install .
+notifications:
+  email: false
 script:
   - py.test --cov-report= --cov=keras_architecture_visualizer --boxed tests/ -vvvvs
 addons:

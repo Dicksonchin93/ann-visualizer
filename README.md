@@ -32,13 +32,13 @@ vis.visualize(model)
 
 ## Documentation
 
-### keras_architecture_viz(model, view=True, filename="network.gv", title="MyNeural Network")
-* `model` - The Keras Sequential model
+### KerasArchitectureVisualizer(filename="network.gv", title="MyNeural Network")
+* `model` - The Keras Sequential/Functional model
 * `view` - If True, it opens the graph preview after executed
 * `filename` - Where to save the graph. (.gv file format)
 * `title` - A title for the graph
 
-## Example keras_architecture_viz
+## Example KerasArchitectureVisualizer
 ```python
 import keras
 from keras.models import Sequential
